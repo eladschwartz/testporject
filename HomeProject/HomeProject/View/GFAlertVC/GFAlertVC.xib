@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GFAlertVC" customModule="HomeProject" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="pcH-Sv-iLN" id="g3r-rz-Fb3"/>
+                <outlet property="alertView" destination="5fY-L2-G9b" id="708-5p-NW1"/>
+                <outlet property="bodyLabel" destination="mus-1t-h8w" id="6k6-Rm-CZm"/>
+                <outlet property="titleLabel" destination="oS5-DJ-CUK" id="Xxi-TK-gs7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="GFAlertVC" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="246"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-L2-G9b">
+                    <rect key="frame" x="60" y="19" width="280" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS5-DJ-CUK" customClass="GFTitleLabel" customModule="HomeProject" customModuleProvider="target">
+                            <rect key="frame" x="15" y="22" width="250" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mus-1t-h8w" customClass="GFBodyLabel" customModule="HomeProject" customModuleProvider="target">
+                            <rect key="frame" x="15" y="63" width="250" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-Sv-iLN" customClass="GFButton" customModule="HomeProject" customModuleProvider="target">
+                            <rect key="frame" x="15" y="150" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3ph-9k-3k5"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnTapped:" destination="-1" eventType="touchUpInside" id="SC8-tz-zqP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="mus-1t-h8w" firstAttribute="top" secondItem="oS5-DJ-CUK" secondAttribute="bottom" constant="20" id="1tR-t1-t2j"/>
+                        <constraint firstAttribute="trailing" secondItem="mus-1t-h8w" secondAttribute="trailing" constant="15" id="4Sa-pj-AQH"/>
+                        <constraint firstItem="mus-1t-h8w" firstAttribute="leading" secondItem="5fY-L2-G9b" secondAttribute="leading" constant="15" id="5Ic-p2-tZ6"/>
+                        <constraint firstAttribute="trailing" secondItem="pcH-Sv-iLN" secondAttribute="trailing" constant="15" id="Sfi-Hw-t1T"/>
+                        <constraint firstItem="pcH-Sv-iLN" firstAttribute="leading" secondItem="5fY-L2-G9b" secondAttribute="leading" constant="15" id="ViA-KP-hvv"/>
+                        <constraint firstAttribute="height" constant="220" id="aYb-Zs-1n8"/>
+                        <constraint firstItem="oS5-DJ-CUK" firstAttribute="leading" secondItem="5fY-L2-G9b" secondAttribute="leading" constant="15" id="jEr-yd-H4z"/>
+                        <constraint firstAttribute="trailing" secondItem="oS5-DJ-CUK" secondAttribute="trailing" constant="15" id="omS-Ir-Qt7"/>
+                        <constraint firstAttribute="width" constant="280" id="qxX-wq-TGc"/>
+                        <constraint firstAttribute="bottom" secondItem="pcH-Sv-iLN" secondAttribute="bottom" constant="20" id="rw2-GY-ci4"/>
+                        <constraint firstItem="oS5-DJ-CUK" firstAttribute="top" secondItem="5fY-L2-G9b" secondAttribute="top" constant="22" id="yiR-It-gyK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5fY-L2-G9b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VRf-wp-NgU"/>
+                <constraint firstItem="5fY-L2-G9b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="6" id="ujc-mL-R9a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="94.20289855072464" y="-7.3660714285714279"/>
+        </view>
+    </objects>
+</document>
